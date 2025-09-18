@@ -21,7 +21,7 @@ else:
 # -------------------------------
 st.set_page_config(page_title="PRD Forge - AI PRD Generator", layout="wide")
 
-st.title("📄 PRD Forge - AI PRD Generator")
+st.title("📄 PRD  - AI PRD Generator")
 st.write("Generate professional Product Requirements Documents (PRDs) from simple app ideas.")
 
 # Sidebar for Settings
@@ -78,7 +78,7 @@ if generate_button:
     if not app_idea or not app_name:
         st.warning("⚠️ Please enter both App Name and Description.")
     else:
-        with st.spinner("Generating PRD... ⏳"):
+        with st.spinner("Results... ⏳"):
             prd_output = generate_prd(app_name, app_idea, app_type, language)
 
         st.subheader("📑 Generated PRD")
